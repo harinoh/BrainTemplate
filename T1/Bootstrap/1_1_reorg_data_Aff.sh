@@ -31,9 +31,9 @@ done
 #	fslmaths Affine_ANTS1/A1Image_0.nii.gz -bin Affine_ANTS1/A1Image_0_mask.nii.gz
 
 ## second time onwards
-	cp $wdir/Affine_ANTS$((n-1))/Warped_Only/AffineBTPtemplate.nii.gz $wdir/Affine_ANTS${n}/A1Image_$((n-1)).nii.gz
-	ThresholdImage 3 $wdir/Affine_ANTS${n}/A1Image_$((n-1)).nii.gz $wdir/Affine_ANTS${n}/A1Image_$((n-1))_mask.nii.gz 0.1 inf
-	ImageMath 3 $wdir/Affine_ANTS${n}/A1Image_$((n-1))_mask.nii.gz Normalize $wdir/Affine_ANTS${n}/A1Image_$((n-1))_mask.nii.gz
-	fslmaths $wdir/Affine_ANTS${n}/A1Image_$((n-1)).nii.gz -mul $wdir/Affine_ANTS${n}/A1Image_$((n-1))_mask.nii.gz \
-		$wdir/Affine_ANTS${n}/A1Image_$((n-1)).nii.gz
+cp $wdir/Affine_ANTS$((n-1))/Warped_Only/AffineBTPtemplate.nii.gz $wdir/Affine_ANTS${n}/A1Image_$((n-1)).nii.gz
+ThresholdImage 3 $wdir/Affine_ANTS${n}/A1Image_$((n-1)).nii.gz $wdir/Affine_ANTS${n}/A1Image_$((n-1))_mask.nii.gz 0.1 inf
+ImageMath 3 $wdir/Affine_ANTS${n}/A1Image_$((n-1))_mask.nii.gz Normalize $wdir/Affine_ANTS${n}/A1Image_$((n-1))_mask.nii.gz
+fslmaths $wdir/Affine_ANTS${n}/A1Image_$((n-1)).nii.gz -mul $wdir/Affine_ANTS${n}/A1Image_$((n-1))_mask.nii.gz \
+	$wdir/Affine_ANTS${n}/A1Image_$((n-1)).nii.gz
 
