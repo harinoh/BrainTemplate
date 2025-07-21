@@ -1,5 +1,8 @@
 # **Brain template**
 
+<img width="921" height="407" alt="image" src="https://github.com/user-attachments/assets/fb25d258-6732-4794-ae4d-82124b96b1b6" />
+
+
 
 ### 1. Preprocessing
    - brain extraction, bias field correction
@@ -23,4 +26,4 @@
 
 
 
-<img width="921" height="407" alt="image" src="https://github.com/user-attachments/assets/fb25d258-6732-4794-ae4d-82124b96b1b6" />
+
